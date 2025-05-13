@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ranking Meme Coin Launch</title>
+    <link href="https://fonts.googleapis.com/css?family=Sora:regular,600,800|IBM+Plex+Mono:regular,600" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            font-family: 'Sora', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #2c003e);
+            color: #fff;
+        }
+        .navbar {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-logo img {
+            width: 75px;
+        }
+        .navbar-menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar-menu a {
+            color: #FF00FF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .navbar-menu a:hover {
+            color: #00FF00;
+        }
+        .navbar-buttons a {
+            color: #fff;
+            background: #FF00FF;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .navbar-buttons a:hover {
+            background: #00FF00;
+            color: #000;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            color: #FFFF00;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #FF00FF;
+        }
+        .hero img {
+            width: 190px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            color: #FF00FF;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            text-align: justify;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .hero button {
+            background: #FF00FF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background: #00FF00;
+            color: #000;
+        }
+        .countdown {
+            background: rgba(255, 0, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .countdown h2 {
+            color: #00FF00;
+            font-size: 2em;
+        }
+        .countdown #timer {
+            font-size: 2.5em;
+            color: #FF00FF;
+            text-shadow: 0 0 5px #FF00FF;
+        }
+        .section {
+            padding: 50px 20px;
+        }
+        .section h2 {
+            color: #FFFF00;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section h5 {
+            color: #FF00FF;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .about, .presale {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+        .about img, .presale img {
+            width: 50%;
+            border-radius: 10px;
+        }
+        .about-content, .presale-content {
+            width: 50%;
+            text-align: justify;
+        }
+        .highlight {
+            color: #FF00FF;
+            font-weight: bold;
+        }
+        .tokenomics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .tokenomics-card {
+            background: rgba(0, 191, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .tokenomics-card h6 {
+            color: #FF00FF;
+            margin-bottom: 10px;
+        }
+        .roadmap {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .roadmap-item {
+            margin-bottom: 20px;
+        }
+        .roadmap-item h4 {
+            color: #FF00FF;
+            margin-bottom: 10px;
+        }
+        .roadmap-task {
+            margin-bottom: 5px;
+        }
+        .footer {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #FF00FF;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #00FF00;
+        }
+        @media (max-width: 768px) {
+            .navbar-menu, .navbar-buttons a {
+                display: none;
+            }
+            .about, .presale {
+                flex-direction: column;
+            }
+            .about img, .presale img, .about-content, .presale-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#" class="navbar-logo">
+            <img src="ranking-logo.png" alt="Ranking Logo: Crown with likes/followers, ranking stars, neon colors">
+        </a>
+        <nav class="navbar-menu">
+            <a href="#about">About</a>
+            <a href="#tokenomics">Tokenomics</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="#presale">Presale</a>
+        </nav>
+        <div class="navbar-buttons">
+            <a href="https://x.com/RankingCoin" target="_blank">X / Twitter</a>
+            <a href="https://t.me/RankingCoin" target="_blank">Telegram</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Turn Clout Into Change with Ranking</h1>
+        <img src="ranking-logo.png" alt="Ranking Logo">
+        <p>Ranking flips the script on social media clout—your likes and shares pump $RANK, while every trade supports causes like mental health or climate action. Join the revolution!</p>
+        <button onclick="window.location.href='#presale'">Join the Launch</button>
+        <div class="countdown">
+            <h2>Launch Countdown</h2>
+            <div id="timer"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h5>About</h5>
+        <h2>About Ranking</h2>
+        <div class="about">
+            <img src="about-image-placeholder.jpg" alt="About Image">
+            <div class="about-content">
+                <p>Introducing <span class="highlight">$RANK</span> – The Memecoin That Turns Clout Into Change.<br><br>
+                In a world obsessed with likes, followers, and flexing online, Ranking flips the script. This isn’t just another meme coin—it’s a satirical jab at social media clout and its real-world ripple effects. Here’s the deal: your social media engagement (likes, shares, retweets) boosts your "Ranking" score, pumping the coin’s vibe. But it’s not just for laughs—a chunk of every transaction goes to real-life causes like mental health support or climate action.<br><br>
+                Join the Ranking crew and turn your scroll-time into something that actually matters. Follow us on X @RankingCoin and let’s make clout count!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="section">
+        <h5>Tokenomics</h5>
+        <h2>Ranking Tokenomics</h2>
+        <div class="tokenomics-grid">
+            <div class="tokenomics-card">
+                <h6>Name</h6>
+                <p>Ranking</p>
+            </div>
+            <div class="tokenomics-card">
+                <h6>Ticker</h6>
+                <p>$RANK</p>
+            </div>
+            <div class="tokenomics-card">
+                <h6>Decimals</h6>
+                <p>9</p>
+            </div>
+            <div class="tokenomics-card">
+                <h6>Chain</h6>
+                <p>SOL</p>
+            </div>
+            <div class="tokenomics-card">
+                <h6>Tax</h6>
+                <p>Revoked Mint</p>
+            </div>
+            <div class="tokenomics-card">
+                <h6>Total Supply</h6>
+                <p>1,000,000,000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section">
+        <h5>Roadmap</h5>
+        <h2>The Ranking Roadmap</h2>
+        <div class="roadmap">
+            <div class="roadmap-item">
+                <h4>Phase 1: Launch & Awareness</h4>
+                <div class="roadmap-task">Launch website and X/Telegram channels</div>
+                <div class="roadmap-task">Initial $RANK token sale on Pump.fun</div>
+                <div class="roadmap-task">Marketing campaigns with meme influencers</div>
+            </div>
+            <div class="roadmap-item">
+                <h4>Phase 2: Community Building</h4>
+                <div class="roadmap-task">Engage X communities with #CloutForChange</div>
+                <div class="roadmap-task">Push for Raydium listing at $69,000 market cap</div>
+                <div class="roadmap-task">Make the first donation to mental health causes</div>
+            </div>
+            <div class="roadmap-item">
+                <h4>Phase 3: Expansion & Impact</h4>
+                <div class="roadmap-task">Partner with social media platforms for clout rewards</div>
+                <div class="roadmap-task">Expand donations to climate action initiatives</div>
+                <div class="roadmap-task">Launch NFT collection tied to social media rankings</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presale Section -->
+    <section id="presale" class="section">
+        <h5>Presale</h5>
+        <h2>Launch Details</h2>
+        <div class="presale">
+            <img src="presale-image-placeholder.jpg" alt="Presale Image">
+            <div class="presale-content">
+                <p><span class="highlight">The Launch</span> is Happening Soon on Pump.fun!<br>
+                <span class="highlight">Date:</span> May 20, 2025, 12:00 PM CDT<br>
+                <span class="highlight">Note:</span><br>
+                - Only SOL accepted, do not send other tokens.<br>
+                - Do not send directly from a centralized exchange; funds sent from a CEX cannot be refunded.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Ranking. All rights reserved.</p>
+        <div>
+            <a href="https://x.com/RankingCoin" target="_blank">@RankingCoin</a>
+            <a href="https://t.me/RankingCoin" target="_blank">Telegram</a>
+            <a href="https://x.com/hashtag/CloutForChange" target="_blank">#CloutForChange</a>
+            <a href="https://x.com/hashtag/RankingRevolution" target="_blank">#RankingRevolution</a>
+        </div>
+        <p>Disclaimer: I am the creator of Ranking. This is a meme coin for entertainment and social good. No profits are guaranteed—99%+ of meme coins fail. Trade responsibly. Consult a lawyer for legal or tax advice.</p>
+    </footer>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        const countDownDate = new Date("May 20, 2025 12:00:00 CDT").getTime();
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("timer").innerHTML = 
+                days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(timer);
+                document.getElementById("timer").innerHTML = "Launched! Join the Revolution!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
